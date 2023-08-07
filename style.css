@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'VT323', monospace;
+  }
+  
+  .header {
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .video-background {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #000;
+  }
+  
+  .video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .content {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    padding-right: right;
+    color: #fff;
+  }
+  
+  .content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    background-color: #9400D3;
+  }
+  
+  .content p {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #9400D3 ;
+    color: #fff;
+  }
+
+  .card-slider-container {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+.card-slider-header {
+  margin-bottom: 60px;
+  padding-top: 20px;
+  text-align: left;
+  font-size: 24px;
+}
+
+.card-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+
+  .feature-thumb {
+    border: 1px solid #f0f0f0;
+    padding: 5em 3em;
+  }
+
+  .feature-thumb span {
+    background: #3f51b5;
+    border-radius: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: bold;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  .feature-thumb h3 {
+    margin: 10px 0;
+  }
+
+
+  .text {
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .image {
+    flex: 1;
+  }
+  
+  .image img {
+    max-width: 100%;
+    height: 350px;
+  }
+  
+  .text {
+    flex: 1;
+    padding: 0 50px;
+  }
+  
+  h1 {
+    font-size: 48px;
+    margin-bottom: 30px;
+    background-color: #9400D3;
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+  }
+  
+
+  /*courses we offer  */
+  .slider-container {
+    width: 100%;
+    overflow-x: hidden;
+    position: relative;
+    background-color: black;
+    color: #fff;
+  }
+  .slider {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    animation: slide-in 1s ease-in-out;
+  }
+  .card {
+    width: 200px;
+    background-color: transparent;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    text-align: center;
+    margin-right: 20px; /* Add margin between cards */
+  }
+  .card:last-child {
+    margin-right: 0; /* Remove margin from last card */
+  }
+  .card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    background-color: #9400D3;
+  }
+  .card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+
+  
+  
+  
+  
+  
+
+
+
+ /* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    .slider {
+      flex-wrap: nowrap;
+    }
+    .card {
+      margin-right: 40px;
+    }
+    .card:last-child {
+      margin-right: 0;
+    }
+    .arrow {
+      font-size: 40px;
+    }
+  }
+  
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .card {
+      width: 350px;
+    }
+    .arrow {
+      font-size: 50px;
+    }
+  }
+  
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+    .card {
+      width: 400px;
+    }
+    .arrow {
+      font-size: 60px;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  .video-background:nth-child(odd) .content {
+    transform: translate(-50%, -50%) translateY(-20%);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .content h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+  
+    .content p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .header img {
+      width: 80px;
+    }
+  
+    .content {
+      padding: 0 10px;
+      max-width: 300px;
+    }
+  
+    .content h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  
+    .content p {
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+  
+    button {
+      padding: 10px 15px;
+      font-size: 14px;
+    }
+  }
+  
